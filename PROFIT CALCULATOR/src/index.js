@@ -7,8 +7,12 @@
 
 // Write the function to return the profit obtained.
 function find_Profit(x,a,b){
-
-    return null;
+    const profit = ((x*b) - (x*a)) - 100;
+    // const profit = x*a(100+x*b);
+    return profit;
 }
+
+find_Profit(x,a,b);
+
 
 //Use SpecRunner to check the Test Cases.

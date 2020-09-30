@@ -4,22 +4,27 @@
 // he wanted to use the left out students to assist him in conducting the team games.
 
 // For instance, if there are 50 students in the class and 
-// if the class has to be divided into 7 equal sized teams, 7 students will be there in each team and 1 student will be left out.
+// if the class has to be divided into 7 equal sized teams, 7 students will be there in each 
+// team and 1 student will be left out.
 // PT sir asks your help to automate this team splitting task.
 
-// Can you please help them by writing a function to find the number of students in each team  and the left out student?
+// Can you please help them by writing a function to find the number of students in each team  
+// and the left out student?
 
 
 // Write the function to retrun the number of students in each team.
-function find_No_of_Students(tot_no_of_students,tot_no_of_teams){
 
+function find_No_of_Students(tot_no_of_students, tot_no_of_teams) {
+    let numberOfStudents = Math.floor(tot_no_of_students / tot_no_of_teams);
+  
+    if (numberOfStudents) return numberOfStudents;
     return null;
-}
-
-// Write the function to retrun the left out student.
-function find_left_out(tot_no_of_students,tot_no_of_teams){
-
-    return null;
-}
+  }
+  
+  // Write the function to retrun the left out student.
+  function find_left_out(tot_no_of_students, tot_no_of_teams) {
+    let leftOutStudents = tot_no_of_students % tot_no_of_teams;
+    return leftOutStudents;
+  }
 
 //Use SpecRunner to check the Test Cases.
